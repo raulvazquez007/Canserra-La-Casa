@@ -1,0 +1,196 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #f0f4ff, #ffffff);
+  color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  border-bottom: 2px solid #00ffff;
+  box-shadow: 0 0 20px #00ffff66;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #00ffff;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+  transition: 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+/* HEADER */
+.index-header {
+  background: linear-gradient(135deg, #5200ff, #00bfff);
+  padding: 5rem 2rem 3rem 2rem;
+  text-align: center;
+  color: white;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.index-header h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.index-description {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.index-img {
+  max-width: 1000px;
+  margin: 3rem auto 0;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Main game card */
+.game-container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.game-card {
+  background: #1f1f1f;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 0 25px #00ffff33;
+}
+
+.game-title {
+  font-size: 2.5rem;
+  color: #00ffff;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.game-img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+  box-shadow: 0 0 15px #00ffff55;
+}
+
+.price {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #00ff99;
+}
+
+.game-desc {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.characters ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.characters ul li {
+  margin-bottom: 0.5rem;
+}
+
+.characters h2,
+.video h2 {
+  color: #ff00cc;
+  margin-bottom: 0.5rem;
+}
+
+.video-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 720px;
+  box-shadow: 0 0 20px #00ffff44;
+}
+
+/* Videojoc Links */
+.index-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 1rem;
+  gap: 1.2rem;
+}
+
+.index-list a {
+  background: #006eff;
+  padding: 1rem 2.5rem;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 110, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+  width: 280px;
+}
+
+.index-list a:hover {
+  background: #004bb5;
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .game-card {
+    padding: 1.2rem;
+  }
+
+  .game-title {
+    font-size: 2rem;
+  }
+
+  iframe {
+    height: 250px;
+  }
+
+  .index-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .index-description {
+    font-size: 1rem;
+  }
+
+  .index-list a {
+    width: 90%;
+  }
+}
