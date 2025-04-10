@@ -173,7 +173,13 @@ iframe {
   .game-card {
     padding: 1.2rem;
   }
-
+  .index-img {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    max-width: 100%;
+    display: block;
+  }
   .game-title {
     font-size: 2rem;
   }
